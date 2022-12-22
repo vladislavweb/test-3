@@ -1,0 +1,16 @@
+.app {
+  padding: 16px;
+  text-align: center;
+}
+
+.app .app__button {
+  margin-bottom: 16px;
+}
+
+.app .app__button button {
+  font-size: 30px;
+}
+
+.app .app__list .app__element {
+  font-size: 20px;
+}
