@@ -22,7 +22,7 @@ const CustomElement: FC<Props> = ({ onWillOnmount, id, ...restProps }) => {
     return () => {
       clearTimeout(timeout);
     };
-  }, [timeToDelete]);
+  }, [timeToDelete, id, onWillOnmount]);
 
   return <div {...restProps}>Исчезнет через {timeToDelete}</div>;
 };
