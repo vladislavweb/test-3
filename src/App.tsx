@@ -4,9 +4,9 @@ import CustomElement from "./CustomElement";
 import { checkBrackets } from "./checkBrackets";
 import "./App.css";
 
-["(()){[]}", "({[[]{}]})", "([{}]{}(){[]})", "({}{[]}{(]}[])"].forEach((str) =>
-  console.log(str, checkBrackets(str)),
-);
+const brackets = ["(()){[]}", "({[[]{}]})", "([{}]{}(){[]})", "({}{[]}{(]}[])"];
+
+brackets.forEach((str) => console.log(str, checkBrackets(str)));
 
 const App: FC = () => {
   const [idsList, setIdsList] = useState<string[]>([]);
